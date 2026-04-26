@@ -1,27 +1,24 @@
-# final_project
-
-# Soccer Match Outcome Analysis (Team Stats Only)
+# Soccer Match Outcome Analysis
 
 ## Overview
 
-This project analyzes team-level match statistics from the 2024–2025 soccer season to identify which factors are most associated with winning a match.
+This project analyzes soccer match fixture data to compare how often home teams win compared with away teams.
 
 ## Dataset
 
-The dataset used is **teamStats.csv** from the ESPN Soccer Data (2024–2025 season).
-It contains match-level statistics for each team, including performance metrics and a binary outcome (win/loss).
+The dataset used is **fixtures.csv**. It contains match-level fixture data, including home and away team IDs, scores, winner indicators, attendance, league information, and match dates.
 
 ## Main Question
 
-**Which team statistics are most associated with winning a match?**
+**Do home teams win more often than away teams?**
 
 ## Approach
 
-* Load and clean the team statistics dataset
-* Identify the win/loss outcome column
-* Compare statistical differences between winning and losing teams
-* Analyze relationships between key metrics (e.g., possession, shots, passes) and match outcome
-* Optionally apply simple regression or statistical testing
+* Load the local dataset with Pandas
+* Count home wins, away wins, and draws
+* Calculate home and away win rates
+* Visualize goal difference and match outcome counts
+* Use a simple linear regression to examine how goal difference relates to home team wins
 
 ## Key Tasks
 
@@ -34,7 +31,7 @@ It contains match-level statistics for each team, including performance metrics 
 
 ## Main Finding
 
-(To be filled after analysis)
+Home teams won more often than away teams in this dataset. Home teams won 2,182 matches, while away teams won 1,469 matches.
 
 ## Technologies Used
 
@@ -45,4 +42,4 @@ It contains match-level statistics for each team, including performance metrics 
 
 ## Notes
 
-This analysis focuses strictly on team-level match performance and does not incorporate player-level or external contextual data.
+This analysis focuses on match-level fixture results and does not include player-level statistics or external context such as injuries, travel, or team rankings.
